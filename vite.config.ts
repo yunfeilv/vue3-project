@@ -1,9 +1,9 @@
-import { fileURLToPath, URL } from "node:url";
+import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import vueJsx from "@vitejs/plugin-vue-jsx";
-import path from "path";
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,20 +11,20 @@ export default defineConfig({
   /** 地址指向配置 */
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   /** 样式配置 */
   css: {
     preprocessorOptions: {
-      scss: {
-        additionalData: '@import "@/assets/style/mian.scss";',
+      less: {
+        additionalData: '@import "@/assets/style/mian.less";',
       },
     },
   },
   /** 服务配置 */
   server: {
-    host: "0.0.0.0",
+    host: '0.0.0.0',
     port: 3000,
     open: true,
     https: false,

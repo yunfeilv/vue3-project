@@ -1,0 +1,19 @@
+{
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "html.validate.scripts": false html 页面管用[2022-03-07 11:20]
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "html"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "typescript.validate.enable": false
+}

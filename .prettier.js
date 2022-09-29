@@ -4,14 +4,14 @@ module.exports = {
   jsxBracketSameLine: true,
   printWidth: 100,
   singleQuote: true,
-  semi: false,
+  semi: true,
   overrides: [
     {
-      files: "*.json",
+      files: '*.json',
       options: {
         printWidth: 200,
       },
     },
   ],
-  arrowParens: "always",
+  arrowParens: 'always',
 };

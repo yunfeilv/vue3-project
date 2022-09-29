@@ -28,15 +28,5 @@ npm run lint
 
 ### 安装
 
-ts,eslint,prettier,route,pinia,
-mrm:npm i mrm or npm i mrm -D --registry=https://registry.npm.taobao.org,
-lint-staged
-NProgress.js 进度条
-done() 关闭
-set(n)来设置进度，n 是 0-1 的数字
-start() 开始
-inc()随机增长进度条，注意，这个方法永远不会让进度条达到 100%。
-
-
-
-
+ts,eslint,prettier,route,pinia, mrm:npm i mrm or npm i mrm -D --registry=https://registry.npm.taobao.org, lint-staged NProgress.js 进度条 done() 关闭 set(n)来设置进度，n 是 0-1 的
+数字 start() 开始 inc()随机增长进度条，注意，这个方法永远不会让进度条达到 100%。

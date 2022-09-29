@@ -1,5 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import { createRouter, createWebHistory } from 'vue-router';
 
 // const router = createRouter({
 //   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,15 +20,15 @@ import HomeView from "../views/HomeView.vue";
 // });
 
 // export default router;
-const routes: RouteRecordRaw[] = [
+const routes = [
   {
-    path: "/",
-    name: "Login",
-    component: () => import("@/views/login.vue"), // 注意这里要带上 文件后缀.vue
+    path: '/',
+    name: 'Login',
+    component: () => import('@/views/loginView.vue'), // 注意这里要带上 文件后缀.vue
   },
 ];
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 
